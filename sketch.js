@@ -17,9 +17,9 @@ function setup() {
 
     database = firebase.database();
 
-    balloon = createSprite(250, 450, 150, 150);
+    balloon = createSprite(310, 450, 150, 150);
     balloon.addAnimation("hotAirBalloon", balloonImage1);
-    balloon.scale = 0.5;
+    balloon.scale = 0.8;
 
     balloonPosition = database.ref("balloon/position");
     balloonPosition.on("value", readPosition, showError);
