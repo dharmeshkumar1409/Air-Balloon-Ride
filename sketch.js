@@ -21,7 +21,7 @@ function setup() {
     balloon.addAnimation("hotAirBalloon", balloonImage1);
     balloon.scale = 0.5;
 
-    balloonPosition = database.ref("ball/position");
+    balloonPosition = database.ref("balloon/position");
     balloonPosition.on("value", readPosition, showError);
 
     textSize(20);
